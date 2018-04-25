@@ -26,3 +26,9 @@ TEST(TicTacToeBoardTest, validPieces)
 	TicTacToeBoard obj;
 	ASSERT_TRUE(obj.getPiece(0,0));
 }
+
+TEST(TicTacToeBoardTest, validIndicies)
+{
+	TicTacToeBoard obj;
+	ASSERT_TRUE(obj.getPiece(4,4));
+}

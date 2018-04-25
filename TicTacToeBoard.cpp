@@ -39,19 +39,24 @@ Piece TicTacToeBoard::toggleTurn()
 **/ 
 Piece TicTacToeBoard::placePiece(int row, int column)
 {
-  if (board[row][column] == Blank)
+  if (board.getPiece(row, column) == Blank)
     return board.getPiece(row, column);
+    
+  if ()
     
   if (turn == X)
   {
-    board[row][column] = turn;
+    board[row][column] = X;
     toggleTurn();
+    return X;
   }
   else if (turn == O)
   {
-    board[row][column] = turn;
+    board[row][column] = O;
     toggleTurn();
+    return O;
   }
+  else if (turn == )
   return ;
 }
 
@@ -61,7 +66,10 @@ Piece TicTacToeBoard::placePiece(int row, int column)
 **/
 Piece TicTacToeBoard::getPiece(int row, int column)
 {
-  return board[row][column];
+  if (row >= BOARDSIZE && column >= BOARDSIZE)
+    return  Invalid;
+  else 
+    return board[row][column];
 }
 
 /**
@@ -70,5 +78,8 @@ Piece TicTacToeBoard::getPiece(int row, int column)
 **/
 Piece TicTacToeBoard::getWinner()
 {
-  return Invalid;
+  for(int i=0; i<BOARDSIZE; i++)
+    for(int j=0; j<BOARDSIZE; j++)
+      if (board.getPiece(i, j))
+  return ;
 }
