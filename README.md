@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/MJohnson159/TicTacToeBoard.svg?branch=master)](https://travis-ci.org/MJohnson159/TicTacToeBoard)
+[![Coverage Status](https://coveralls.io/repos/github/MJohnson159/TicTacToeBoard/badge.svg?branch=master)](https://coveralls.io/github/MJohnson159/TicTacToeBoard?branch=master)
 
 # TicTacToeBoard
 
