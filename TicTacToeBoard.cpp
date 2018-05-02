@@ -42,8 +42,6 @@ Piece TicTacToeBoard::placePiece(int row, int column)
   if (board.getPiece(row, column) == Blank)
     return board.getPiece(row, column);
     
-  if ()
-    
   if (turn == X)
   {
     board[row][column] = X;
