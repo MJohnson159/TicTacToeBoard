@@ -69,7 +69,7 @@ Piece TicTacToeBoard::getPiece(int row, int column)
   if (row >= BOARDSIZE && column >= BOARDSIZE)
     return  Invalid;
   else 
-    return board[row][column];
+    return board[row][column]; 
 }
 
 /**
